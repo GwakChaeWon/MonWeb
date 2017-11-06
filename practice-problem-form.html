@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+	<style type="text/css">
+	table, th, td {
+			border: 1px solid black;
+			padding: 2px;
+			border-collapse: collapse;
+	}
+</style>
+</head>
+<body>
+<h1> Make a form as shown in image </h1>
+<p> <img src="form.PNG" alt="form"/></p>
+
+<table>
+	<tr>
+		<th> Name </th>
+		<th> Value </th>
+	</tr>
+	<tr>
+		<td>First name:</td>
+		<td>
+			<form>
+				<input type="text" name="firstname" value="Mickey"> 
+			</form>
+		</td>
+	</tr>
+	<tr>	
+		<td>last name:</td>
+		<td>
+			<form>
+				<input type="text" name="lastname" value="Mouse">
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td>Gender</td>
+		<td>
+			<form>
+				<input type="radio" name="gender" value="male" checked> Male <br>
+				<input type="radio" name="gender" value="female"> Female
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td>Check all that apply</td>
+		<td>
+			<form>
+				<input type="checkbox" name="apply" value="bike"> I have a bike <br>
+				<input type="checkbox" name="apply" value="car"> I have a car
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td>Comment</td>
+		<td>
+			<textarea name="comment"></textarea>
+		</td>
+	</tr>
+
+	<tr>
+		<th colspan="2" >
+			<form action="/action_page.php">
+			<input type="submit" value="Submit">
+			</form>
+		</th>
+	</tr>
+</body>
+</body>
+
+</html>
