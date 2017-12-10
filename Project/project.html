@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<title> BTOB CONCERT </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="project.css">
+
+<style>
+	body, html {
+		height: 100%
+	}
+	p {
+		line-height: 2
+	}
+	.bgimg, .bgimg2
+	{
+    	min-height: 100%;
+    	background-position: center;
+    	background-size: cover;
+	}
+	.bgimg {
+		background-image: url("images/BTOB1.jpg")
+	}
+	#head {
+		border: 3px solid white;
+		padding : 50px;
+		background-color: #6799FF;
+		opacity: 0.8;
+	}
+</style>
+<body>
+
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  	<div class="w3-display-middle w3-text-white w3-center" id="head">
+    	<h1 class="w3-jumbo"> BTOB 4th CONCERT </h1>
+    	<hr class="w3-border-white" style="margin:auto;width:80%">
+    	<h2><i> [ OUR CONCERT ] </i></h2>
+    	<h3><b> 2017.12.23 (SAT) ~ 2017.12.24 (SUN) </b></h3>
+  	</div>
+</header>
+
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <div class="w3-bar w3-pale-blue w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+    <a href="#home" style="width:25%" class="w3-bar-item w3-button"> HOME </a>
+    <a href="#cautions" style="width:25%" class="w3-bar-item w3-button"> CAUTIONS </a>
+    <a href="#information" style="width:25%" class="w3-bar-item w3-button"> INFO </a>
+    <a href="#Registration" style="width:25%" class="w3-bar-item w3-button w3-hover-black"> REGISTRAION </a>
+  </div>
+</div>
+
+<!-- About / Jane And John -->
+<div class="w3-container w3-padding-64 w3-pale-blue w3-grayscale-min" id="cautions">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-grey"><b> CAUTIONS in CONCERT </b></h1>
+    <hr class="w3-border-grey" style="margin:auto;width:80%">
+    <p><i>1. All recording and videotaping activities, including photos and videos, are prohibited. - Recorded materials can be deleted when caught, and may be forced out of circulation.</i>
+    </p>
+    <p><i>2. Dangerous substances such as bottles, cans, firecrackers, laser and flash are strictly prohibited.</i>
+	<p><i>3. You may want to refrain from harming other audiences, and if you are overly cautious, you will be subjected to strong enforcement agents.</i>
+	<p><i>4. The start time may vary depending on the day of the day and the site situation, and the benefits are not the reason for the refund.</i>
+    </p>
+    <p><i>5. The owner of the auditorium is responsible for the loss of the property, so please do not place any valuables with him.</i>
+    <p><i>6. Follow the instructions provided on the field and follow the instructions on the field to keep the order.</i>
+    <br>
+    <p class="w3-center"><a href="#information" class="w3-button w3-blue w3-round w3-padding-large w3-large"> >> INFORMAION </a></p>
+  </div>
+</div>
+
+<!-- Wedding information -->
+<div class="w3-container w3-padding-64 w3-light-blue w3-grayscale-min w3-center" id="information">
+  	<div class="w3-content">
+    	<h1 class="w3-text-white"><b> INFOMATION </b></h1>
+    	<hr class="w3-border-white" style="margin:auto;width:80%">
+    	<img class="w3-round-large w3-grayscale-min" src="images/map.jpg" style="width:100%;margin:64px 0">
+		<div class="w3-row">
+      		<div class="w3-half">
+        		<h2> [ When ] </h2>
+        		<br>
+        		<br>
+        		<p> >> 2017.12.23 (SAT) - 5:00pm </p>
+        		<p> >> 2017.12.24 (SUN) - 5:00pm </p>
+   			</div>
+      		<div class="w3-half">
+        		<h2> [ Where ] </h2>
+        		<p> >> Kintex, Ilsanseo-gu, Goyang-si, Gyeonggi-do
+        		<p> >> Exit 2 : Walk on Kintex Road (7 minutes, 15 minutes, 15 minutes) bus No.58 (15 minutes required, 15 minutes interval) </p>
+        		<p> >> Exit 5 : Bus No.39, 82 (5 minutes, 15 minutes, 15 minutes), No.9700, 8109 (5 minutes, 20 minutes) </p>
+
+      		</div>
+   		</div>
+  </div>
+</div>
+
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 w3-blue-gray w3-center w3-wide" id="Registration">
+  <h1> WOULD YOU LIKE TO JOIN US? </h1>
+  <p class="w3-large"> Please reply before the concert. </p>
+  <p class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-blue w3-opacity w3-hover-opacity-off" style="padding:8px 60px"> >> CLICK HERE ! </button>
+  </p>
+</div>
+
+<!-- RSVP modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h1 class="w3-wide"> PLEASE FILL OUT THIS FORM. </h1>
+      <p> I hope you can join us. </p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+      </form>
+      <p><i>From. BTOB</i></p>
+      <div class="w3-row">
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-gray w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-white">w3.css</a></p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
+</html>
